@@ -1,0 +1,13 @@
+<div *ngIf="post$ | async as post">
+
+  <h2>{{ post.text }}</h2>
+  <h4>Votes: {{post.likes}}</h4>
+
+  <button (click)="upvote()">Upvote</button>
+  <button (click)="downvote()">DownVote</button>
+  <button (click)="reset()">Reset</button>
+
+  <input [(ngModel)]="text">
+  <button (click)="editText()">Edit</button>
+
+</div>
