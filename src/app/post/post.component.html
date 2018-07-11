@@ -1,13 +1,19 @@
-<div *ngIf="post$ | async as post">
+<div style="text-align:center" *ngIf="post$ | async as post">
 
   <h2>{{ post.text }}</h2>
   <h4>Votes: {{post.likes}}</h4>
 
-  <button (click)="upvote()">Upvote</button>
-  <button (click)="downvote()">DownVote</button>
-  <button (click)="reset()">Reset</button>
+  <button mat-raised-button (click)="upvote()">Upvote</button>
+  <button mat-raised-button (click)="downvote()">DownVote</button>
 
-  <input [(ngModel)]="text">
-  <button (click)="editText()">Edit</button>
+  <div>
+    <mat-form-field>
+      <input matInput [(ngModel)]="text" placeholder="Title">
+    </mat-form-field>
+  </div>
+
+  <button mat-raised-button (click)="editText()" color="primary">Edit</button>
+  <button mat-raised-button (click)="reset()" color="accent">Reset</button>
+
 
 </div>

@@ -9,7 +9,7 @@ export interface Post {
 }
 
 const defaultState: Post = {
-  text: "Default Post",
+  text: "Change Me",
   likes: 0
 };
 

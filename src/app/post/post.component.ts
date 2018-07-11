@@ -27,7 +27,9 @@ export class PostComponent implements OnInit {
   ngOnInit() {}
 
   editText() {
-    this.store.dispatch(new PostActions.EditText(this.text));
+    if (this.text) {
+      this.store.dispatch(new PostActions.EditText(this.text));
+    }
   }
 
   upvote() {

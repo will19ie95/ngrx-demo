@@ -10,6 +10,9 @@ export function messageReducer(state: string = "Hello World", action: Action) {
     case "CHINESE":
       return (state = "Ni Hao");
 
+    case "KOREAN":
+      return (state = "Annyong");
+
     default:
       return state;
   }

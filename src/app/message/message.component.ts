@@ -25,4 +25,7 @@ export class MessageComponent implements OnInit {
   chineseMessage() {
     this.store.dispatch({ type: "CHINESE" });
   }
+  koreanMessage() {
+    this.store.dispatch({ type: "KOREAN" });
+  }
 }
