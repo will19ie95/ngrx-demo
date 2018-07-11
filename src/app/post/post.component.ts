@@ -21,7 +21,6 @@ export class PostComponent implements OnInit {
 
   constructor(private store: Store<AppState>) {
     this.post$ = store.select("post");
-    console.log("got post", this.post$);
   }
 
   ngOnInit() {}
@@ -29,6 +28,7 @@ export class PostComponent implements OnInit {
   editText() {
     if (this.text) {
       this.store.dispatch(new PostActions.EditText(this.text));
+      this.text = "";
     }
   }
 
