@@ -9,13 +9,14 @@ import { MaterialModule } from "./material.module";
 
 // NGRX
 import { StoreModule } from "@ngrx/store";
-import { messageReducer } from "./message/message.reducer";
+import { messageReducer } from "./reducers/message.reducer";
 import { PostComponent } from "./post/post.component";
-import { postReducer } from "./post/post.reducer";
+import { postReducer } from "./reducers/post.reducer";
 import { MessageComponent } from "./message/message.component";
+import { FormComponent } from "./form/form.component";
 
 @NgModule({
-  declarations: [AppComponent, MessageComponent, PostComponent],
+  declarations: [AppComponent, MessageComponent, PostComponent, FormComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

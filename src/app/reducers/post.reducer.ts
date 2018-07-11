@@ -1,5 +1,5 @@
 import { Action } from "@ngrx/store";
-import { PostActionsUnion, PostActionTypes } from "./post.actions";
+import { PostActionsUnion, PostActionTypes } from "../actions/post.actions";
 
 export type Action = PostActionsUnion;
 

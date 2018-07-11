@@ -1,9 +1,8 @@
 import { Component, OnInit } from "@angular/core";
-import { Post } from "./post.reducer";
-import { Observable } from "../../../node_modules/rxjs";
 import { Store } from "@ngrx/store";
-import { PostActionTypes } from "./post.actions";
-import * as PostActions from "./post.actions";
+import { Post } from "../reducers/post.reducer";
+import { Observable } from "../../../node_modules/rxjs";
+import * as PostActions from "../actions/post.actions";
 
 interface AppState {
   post: Post;

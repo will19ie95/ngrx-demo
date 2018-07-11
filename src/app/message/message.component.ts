@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { Store } from "../../../node_modules/@ngrx/store";
 import { Observable } from "../../../node_modules/rxjs";
+import { Store } from "../../../node_modules/@ngrx/store";
 
 interface AppState {
   message: String;
